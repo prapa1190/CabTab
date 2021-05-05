@@ -15,6 +15,7 @@
 		228E8C212642CF3E0072CEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228E8C1F2642CF3E0072CEE5 /* LaunchScreen.storyboard */; };
 		228E8C2C2642CF3F0072CEE5 /* CabTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C2B2642CF3F0072CEE5 /* CabTabTests.swift */; };
 		228E8C372642CF3F0072CEE5 /* CabTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C362642CF3F0072CEE5 /* CabTabUITests.swift */; };
+		228E8C482642D15E0072CEE5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 228E8C472642D15E0072CEE5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		228E8C322642CF3F0072CEE5 /* CabTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		228E8C362642CF3F0072CEE5 /* CabTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabTabUITests.swift; sourceTree = "<group>"; };
 		228E8C382642CF3F0072CEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228E8C472642D15E0072CEE5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		228E8C082642CF3B0072CEE5 = {
 			isa = PBXGroup;
 			children = (
+				228E8C472642D15E0072CEE5 /* .gitignore */,
 				228E8C132642CF3B0072CEE5 /* CabTab */,
 				228E8C2A2642CF3F0072CEE5 /* CabTabTests */,
 				228E8C352642CF3F0072CEE5 /* CabTabUITests */,
@@ -99,12 +102,13 @@
 		228E8C132642CF3B0072CEE5 /* CabTab */ = {
 			isa = PBXGroup;
 			children = (
+				228E8C4E2642D1D20072CEE5 /* Models */,
+				228E8C4C2642D1BB0072CEE5 /* Views */,
+				228E8C4F2642D1E20072CEE5 /* ViewModels */,
+				228E8C502642D1FE0072CEE5 /* Controllers */,
 				228E8C142642CF3B0072CEE5 /* AppDelegate.swift */,
 				228E8C162642CF3B0072CEE5 /* SceneDelegate.swift */,
-				228E8C182642CF3B0072CEE5 /* ViewController.swift */,
-				228E8C1A2642CF3B0072CEE5 /* Main.storyboard */,
 				228E8C1D2642CF3E0072CEE5 /* Assets.xcassets */,
-				228E8C1F2642CF3E0072CEE5 /* LaunchScreen.storyboard */,
 				228E8C222642CF3E0072CEE5 /* Info.plist */,
 			);
 			path = CabTab;
@@ -126,6 +130,37 @@
 				228E8C382642CF3F0072CEE5 /* Info.plist */,
 			);
 			path = CabTabUITests;
+			sourceTree = "<group>";
+		};
+		228E8C4C2642D1BB0072CEE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				228E8C1A2642CF3B0072CEE5 /* Main.storyboard */,
+				228E8C1F2642CF3E0072CEE5 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		228E8C4E2642D1D20072CEE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		228E8C4F2642D1E20072CEE5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		228E8C502642D1FE0072CEE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				228E8C182642CF3B0072CEE5 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228E8C482642D15E0072CEE5 /* .gitignore in Resources */,
 				228E8C212642CF3E0072CEE5 /* LaunchScreen.storyboard in Resources */,
 				228E8C1E2642CF3E0072CEE5 /* Assets.xcassets in Resources */,
 				228E8C1C2642CF3B0072CEE5 /* Main.storyboard in Resources */,
