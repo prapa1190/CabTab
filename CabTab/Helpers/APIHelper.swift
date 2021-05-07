@@ -32,4 +32,29 @@ class APIHelper: NSObject {
 			}
 		}.resume()
 	}
+
+	func fetchCabData(p1latitude: Double, p1longitude: Double, p2latitude: Double, p2longitude: Double, completion: @escaping (CabData?) -> ()) {
+		let urlString = "\(apiBaseURL)?p1Lat=\(p1latitude)&p1Lon=\(p1longitude)&p2Lat=\(p2latitude)&p2Lon=\(p2longitude)"
+
+		guard let url = URL(string:urlString) else {
+			completion(nil)
+			return
+		}
+
+		URLSession.shared.dataTask(with: url) { (responseData, reponse, error) in
+			if let error = error {
+				print("\(#function) : error : \(error.localizedDescription)")
+				completion(nil)
+			} else if let data = responseData {
+				print("\(#function) : data : \(String(data: data, encoding: .utf8) ?? "[]")")
+				do {
+					let cabData = try CabData(data: data)
+					completion(cabData)
+				} catch {
+					print("\(#function) : parse error : \(error.localizedDescription)")
+					completion(nil)
+				}
+			}
+		}.resume()
+	}
 }

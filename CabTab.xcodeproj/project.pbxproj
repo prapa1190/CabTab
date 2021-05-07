@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		228E8C372642CF3F0072CEE5 /* CabTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C362642CF3F0072CEE5 /* CabTabUITests.swift */; };
 		228E8C482642D15E0072CEE5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 228E8C472642D15E0072CEE5 /* .gitignore */; };
 		228E8C522642D4A10072CEE5 /* CabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C512642D4A10072CEE5 /* CabData.swift */; };
+		229A1998264562490026E759 /* CabTabModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1997264562490026E759 /* CabTabModelTest.swift */; };
 		22E1505C2642DFED00AA658D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1505B2642DFED00AA658D /* ListViewController.swift */; };
 		22E150612642E01500AA658D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E150602642E01500AA658D /* MapViewController.swift */; };
 		22E1506A2642E55200AA658D /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E150692642E55200AA658D /* APIHelper.swift */; };
@@ -83,6 +84,7 @@
 		228E8C382642CF3F0072CEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228E8C472642D15E0072CEE5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		228E8C512642D4A10072CEE5 /* CabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabData.swift; sourceTree = "<group>"; };
+		229A1997264562490026E759 /* CabTabModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabTabModelTest.swift; sourceTree = "<group>"; };
 		22E1505B2642DFED00AA658D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		22E150602642E01500AA658D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		22E150692642E55200AA658D /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				228E8C2B2642CF3F0072CEE5 /* CabTabTests.swift */,
 				228E8C2D2642CF3F0072CEE5 /* Info.plist */,
+				229A1997264562490026E759 /* CabTabModelTest.swift */,
 			);
 			path = CabTabTests;
 			sourceTree = "<group>";
@@ -272,7 +275,6 @@
 				04C345421E5472A8D7D6BDA0 /* Pods-CabTabTests.debug.xcconfig */,
 				9D4DECC1091E454758100075 /* Pods-CabTabTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -595,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229A1998264562490026E759 /* CabTabModelTest.swift in Sources */,
 				228E8C2C2642CF3F0072CEE5 /* CabTabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,14 +813,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6UB8W6ABG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CabTab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobitrail.debugApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,14 +834,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6UB8W6ABG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CabTab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobitrail.debugApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

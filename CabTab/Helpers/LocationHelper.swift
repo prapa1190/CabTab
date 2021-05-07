@@ -29,12 +29,12 @@ class LocationHelper: NSObject {
 		self.currentLocation
 	}
 
-	func getDistanceFrom(lat: Double, long: Double) -> Double {
+	func getDistanceFrom(lat: Double, long: Double) -> Double? {
 		if let currentLocation = self.currentLocation {
 			let location = CLLocation(latitude: lat, longitude: long)
 			return currentLocation.distance(from: location)
 		} else {
-			return -1.0
+			return nil
 		}
 	}
 }
@@ -51,7 +51,6 @@ extension LocationHelper: CLLocationManagerDelegate {
 
 		// Call stopUpdatingLocation() to stop listening for location updates,
 		// other wise this function will be called every time when user location changes.
-//		self.locationManager.stopUpdatingLocation()
 		self.currentLocation = userLocation
 	}
 }

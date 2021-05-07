@@ -10,19 +10,28 @@ import UIKit
 class ListViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	private var cabDataViewModel: CabDataViewModel!
+	private var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		self.title = "CabTab"
+		self.title = "List"
+
+		activityIndicator = UIActivityIndicatorView(style: traitCollection.userInterfaceStyle == .light ? .gray : .white)
+		activityIndicator.hidesWhenStopped = true
+		let barButton = UIBarButtonItem(customView: activityIndicator)
+		self.navigationItem.setRightBarButton(barButton, animated: true)
+
 		callViewModelForUIUpdate()
     }
 
 	func callViewModelForUIUpdate() {
+		activityIndicator.startAnimating()
 		cabDataViewModel = CabDataViewModel()
 		cabDataViewModel.bindCabDataViewModelToController = {
-			DispatchQueue.main.async {
+			DispatchQueue.main.async { [unowned self] in
+				self.activityIndicator.stopAnimating()
 				self.tableView.reloadData()
 			}
 		}
@@ -38,6 +47,10 @@ class ListViewController: UIViewController {
     }
     */
 
+	deinit {
+		cabDataViewModel = nil
+		activityIndicator = nil
+	}
 }
 
 extension ListViewController: UITableViewDataSource {

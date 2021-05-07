@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		customizeUI()
 		LocationHelper.shared.requestPermission()
+		GMSServices.provideAPIKey("AIzaSyDHA8DYEylakzQaUZmY6wUrGlildoOqX-w")
 		return true
 	}
 
@@ -38,8 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func customizeUI() {
 		let appearance = UINavigationBar.appearance()
 		if #available(iOS 13.0, *) {
-//			appearance.barTintColor = UIColor.systemBackground
-//			appearance.backgroundColor = UIColor.systemBackground
+			appearance.barTintColor = UIColor.systemBackground
+			appearance.backgroundColor = UIColor.systemBackground
 			appearance.tintColor = .label
 			appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.label]
 		} else {
