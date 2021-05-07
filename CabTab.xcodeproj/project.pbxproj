@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01509442C0DF685511F6F4B0 /* Pods_CabTabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFA42E760F415F75441E391 /* Pods_CabTabTests.framework */; };
+		03CAD11DBCBAF1435AF76F4F /* Pods_CabTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8717B22BC5164E09E8113A2C /* Pods_CabTab.framework */; };
+		058FBD4E84C36D865665E26D /* Pods_CabTab_CabTabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EDFC624F6F9FBC79AB90BB /* Pods_CabTab_CabTabUITests.framework */; };
+		223320B926450FBC003E983C /* CabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223320B826450FBC003E983C /* CabTableViewCell.swift */; };
+		223320BE264518F5003E983C /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223320BD264518F5003E983C /* LocationHelper.swift */; };
+		223320C62645270F003E983C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223320C52645270F003E983C /* Constants.swift */; };
+		223320D12645283A003E983C /* CabTabSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223320D02645283A003E983C /* CabTabSlowTests.swift */; };
 		228E8C152642CF3B0072CEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C142642CF3B0072CEE5 /* AppDelegate.swift */; };
 		228E8C172642CF3B0072CEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C162642CF3B0072CEE5 /* SceneDelegate.swift */; };
 		228E8C192642CF3B0072CEE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C182642CF3B0072CEE5 /* ViewController.swift */; };
@@ -16,9 +23,23 @@
 		228E8C2C2642CF3F0072CEE5 /* CabTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C2B2642CF3F0072CEE5 /* CabTabTests.swift */; };
 		228E8C372642CF3F0072CEE5 /* CabTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C362642CF3F0072CEE5 /* CabTabUITests.swift */; };
 		228E8C482642D15E0072CEE5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 228E8C472642D15E0072CEE5 /* .gitignore */; };
+		228E8C522642D4A10072CEE5 /* CabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E8C512642D4A10072CEE5 /* CabData.swift */; };
+		22E1505C2642DFED00AA658D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1505B2642DFED00AA658D /* ListViewController.swift */; };
+		22E150612642E01500AA658D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E150602642E01500AA658D /* MapViewController.swift */; };
+		22E1506A2642E55200AA658D /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E150692642E55200AA658D /* APIHelper.swift */; };
+		22E1506F2642E82500AA658D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1506E2642E82500AA658D /* NetworkMonitor.swift */; };
+		22E150772642E93D00AA658D /* CabDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E150762642E93D00AA658D /* CabDataViewModel.swift */; };
+		3D40597C22068E6C10BB5AC6 /* Pods_CabTabSlowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6983AFFC326FFE228BFA3B64 /* Pods_CabTabSlowTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		223320D32645283A003E983C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E8C092642CF3B0072CEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228E8C102642CF3B0072CEE5;
+			remoteInfo = CabTab;
+		};
 		228E8C282642CF3F0072CEE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E8C092642CF3B0072CEE5 /* Project object */;
@@ -36,6 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03330292F099A89F3E6B9FF3 /* Pods-CabTab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTab.debug.xcconfig"; path = "Target Support Files/Pods-CabTab/Pods-CabTab.debug.xcconfig"; sourceTree = "<group>"; };
+		04C345421E5472A8D7D6BDA0 /* Pods-CabTabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTabTests.debug.xcconfig"; path = "Target Support Files/Pods-CabTabTests/Pods-CabTabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		079CEF22683CB6AE486317FA /* Pods-CabTab-CabTabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTab-CabTabUITests.debug.xcconfig"; path = "Target Support Files/Pods-CabTab-CabTabUITests/Pods-CabTab-CabTabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		20CD6A96F33D4A12B96C1D3B /* Pods-CabTab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTab.release.xcconfig"; path = "Target Support Files/Pods-CabTab/Pods-CabTab.release.xcconfig"; sourceTree = "<group>"; };
+		223320B826450FBC003E983C /* CabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabTableViewCell.swift; sourceTree = "<group>"; };
+		223320BD264518F5003E983C /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		223320C52645270F003E983C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		223320CE2645283A003E983C /* CabTabSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabTabSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		223320D02645283A003E983C /* CabTabSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabTabSlowTests.swift; sourceTree = "<group>"; };
+		223320D22645283A003E983C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228E8C112642CF3B0072CEE5 /* CabTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228E8C142642CF3B0072CEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		228E8C162642CF3B0072CEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,13 +82,36 @@
 		228E8C362642CF3F0072CEE5 /* CabTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabTabUITests.swift; sourceTree = "<group>"; };
 		228E8C382642CF3F0072CEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228E8C472642D15E0072CEE5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		228E8C512642D4A10072CEE5 /* CabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabData.swift; sourceTree = "<group>"; };
+		22E1505B2642DFED00AA658D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		22E150602642E01500AA658D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		22E150692642E55200AA658D /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		22E1506E2642E82500AA658D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		22E150762642E93D00AA658D /* CabDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabDataViewModel.swift; sourceTree = "<group>"; };
+		6983AFFC326FFE228BFA3B64 /* Pods_CabTabSlowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabTabSlowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8717B22BC5164E09E8113A2C /* Pods_CabTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4DECC1091E454758100075 /* Pods-CabTabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTabTests.release.xcconfig"; path = "Target Support Files/Pods-CabTabTests/Pods-CabTabTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAAF7D9D914386C80A412B3B /* Pods-CabTab-CabTabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTab-CabTabUITests.release.xcconfig"; path = "Target Support Files/Pods-CabTab-CabTabUITests/Pods-CabTab-CabTabUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBFA42E760F415F75441E391 /* Pods_CabTabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabTabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ECF21A863F917A458029E5 /* Pods-CabTabSlowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTabSlowTests.debug.xcconfig"; path = "Target Support Files/Pods-CabTabSlowTests/Pods-CabTabSlowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EDFC624F6F9FBC79AB90BB /* Pods_CabTab_CabTabUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabTab_CabTabUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19694B072953D7A18A0F736 /* Pods-CabTabSlowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabTabSlowTests.release.xcconfig"; path = "Target Support Files/Pods-CabTabSlowTests/Pods-CabTabSlowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		223320CB2645283A003E983C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D40597C22068E6C10BB5AC6 /* Pods_CabTabSlowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		228E8C0E2642CF3B0072CEE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CAD11DBCBAF1435AF76F4F /* Pods_CabTab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01509442C0DF685511F6F4B0 /* Pods_CabTabTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +127,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058FBD4E84C36D865665E26D /* Pods_CabTab_CabTabUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223320CF2645283A003E983C /* CabTabSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				223320D02645283A003E983C /* CabTabSlowTests.swift */,
+				223320D22645283A003E983C /* Info.plist */,
+			);
+			path = CabTabSlowTests;
+			sourceTree = "<group>";
+		};
 		228E8C082642CF3B0072CEE5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +150,10 @@
 				228E8C132642CF3B0072CEE5 /* CabTab */,
 				228E8C2A2642CF3F0072CEE5 /* CabTabTests */,
 				228E8C352642CF3F0072CEE5 /* CabTabUITests */,
+				223320CF2645283A003E983C /* CabTabSlowTests */,
 				228E8C122642CF3B0072CEE5 /* Products */,
+				71B74727F531F3E070C2B473 /* Pods */,
+				6FF682A3A89AC60DCD3FED5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +163,7 @@
 				228E8C112642CF3B0072CEE5 /* CabTab.app */,
 				228E8C272642CF3F0072CEE5 /* CabTabTests.xctest */,
 				228E8C322642CF3F0072CEE5 /* CabTabUITests.xctest */,
+				223320CE2645283A003E983C /* CabTabSlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +175,7 @@
 				228E8C4C2642D1BB0072CEE5 /* Views */,
 				228E8C4F2642D1E20072CEE5 /* ViewModels */,
 				228E8C502642D1FE0072CEE5 /* Controllers */,
+				22E150652642E03200AA658D /* Helpers */,
 				228E8C142642CF3B0072CEE5 /* AppDelegate.swift */,
 				228E8C162642CF3B0072CEE5 /* SceneDelegate.swift */,
 				228E8C1D2642CF3E0072CEE5 /* Assets.xcassets */,
@@ -137,6 +207,7 @@
 			children = (
 				228E8C1A2642CF3B0072CEE5 /* Main.storyboard */,
 				228E8C1F2642CF3E0072CEE5 /* LaunchScreen.storyboard */,
+				223320B826450FBC003E983C /* CabTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +215,7 @@
 		228E8C4E2642D1D20072CEE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				228E8C512642D4A10072CEE5 /* CabData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +223,7 @@
 		228E8C4F2642D1E20072CEE5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				22E150762642E93D00AA658D /* CabDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -159,20 +232,81 @@
 			isa = PBXGroup;
 			children = (
 				228E8C182642CF3B0072CEE5 /* ViewController.swift */,
+				22E1505B2642DFED00AA658D /* ListViewController.swift */,
+				22E150602642E01500AA658D /* MapViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22E150652642E03200AA658D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				22E150692642E55200AA658D /* APIHelper.swift */,
+				22E1506E2642E82500AA658D /* NetworkMonitor.swift */,
+				223320BD264518F5003E983C /* LocationHelper.swift */,
+				223320C52645270F003E983C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6FF682A3A89AC60DCD3FED5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8717B22BC5164E09E8113A2C /* Pods_CabTab.framework */,
+				E9EDFC624F6F9FBC79AB90BB /* Pods_CabTab_CabTabUITests.framework */,
+				6983AFFC326FFE228BFA3B64 /* Pods_CabTabSlowTests.framework */,
+				BBFA42E760F415F75441E391 /* Pods_CabTabTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71B74727F531F3E070C2B473 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03330292F099A89F3E6B9FF3 /* Pods-CabTab.debug.xcconfig */,
+				20CD6A96F33D4A12B96C1D3B /* Pods-CabTab.release.xcconfig */,
+				079CEF22683CB6AE486317FA /* Pods-CabTab-CabTabUITests.debug.xcconfig */,
+				AAAF7D9D914386C80A412B3B /* Pods-CabTab-CabTabUITests.release.xcconfig */,
+				D2ECF21A863F917A458029E5 /* Pods-CabTabSlowTests.debug.xcconfig */,
+				F19694B072953D7A18A0F736 /* Pods-CabTabSlowTests.release.xcconfig */,
+				04C345421E5472A8D7D6BDA0 /* Pods-CabTabTests.debug.xcconfig */,
+				9D4DECC1091E454758100075 /* Pods-CabTabTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		223320CD2645283A003E983C /* CabTabSlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223320D52645283A003E983C /* Build configuration list for PBXNativeTarget "CabTabSlowTests" */;
+			buildPhases = (
+				07C88FA4BE3A996A88414055 /* [CP] Check Pods Manifest.lock */,
+				223320CA2645283A003E983C /* Sources */,
+				223320CB2645283A003E983C /* Frameworks */,
+				223320CC2645283A003E983C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				223320D42645283A003E983C /* PBXTargetDependency */,
+			);
+			name = CabTabSlowTests;
+			productName = CabTabSlowTests;
+			productReference = 223320CE2645283A003E983C /* CabTabSlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		228E8C102642CF3B0072CEE5 /* CabTab */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228E8C3B2642CF3F0072CEE5 /* Build configuration list for PBXNativeTarget "CabTab" */;
 			buildPhases = (
+				4A64119882153DC9F9FDBD47 /* [CP] Check Pods Manifest.lock */,
 				228E8C0D2642CF3B0072CEE5 /* Sources */,
 				228E8C0E2642CF3B0072CEE5 /* Frameworks */,
 				228E8C0F2642CF3B0072CEE5 /* Resources */,
+				5DE57B1FA2CF01CEAB11B8C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228E8C3E2642CF3F0072CEE5 /* Build configuration list for PBXNativeTarget "CabTabTests" */;
 			buildPhases = (
+				4F977B38B02A433C2FF17395 /* [CP] Check Pods Manifest.lock */,
 				228E8C232642CF3F0072CEE5 /* Sources */,
 				228E8C242642CF3F0072CEE5 /* Frameworks */,
 				228E8C252642CF3F0072CEE5 /* Resources */,
@@ -205,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228E8C412642CF3F0072CEE5 /* Build configuration list for PBXNativeTarget "CabTabUITests" */;
 			buildPhases = (
+				D68640FB1905EBF91AC2BA10 /* [CP] Check Pods Manifest.lock */,
 				228E8C2E2642CF3F0072CEE5 /* Sources */,
 				228E8C2F2642CF3F0072CEE5 /* Frameworks */,
 				228E8C302642CF3F0072CEE5 /* Resources */,
+				C36DD8E2E9EACA48E7A4DF96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +365,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					223320CD2645283A003E983C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 228E8C102642CF3B0072CEE5;
+					};
 					228E8C102642CF3B0072CEE5 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -257,11 +398,19 @@
 				228E8C102642CF3B0072CEE5 /* CabTab */,
 				228E8C262642CF3F0072CEE5 /* CabTabTests */,
 				228E8C312642CF3F0072CEE5 /* CabTabUITests */,
+				223320CD2645283A003E983C /* CabTabSlowTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		223320CC2645283A003E983C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		228E8C0F2642CF3B0072CEE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,14 +438,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07C88FA4BE3A996A88414055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabTabSlowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A64119882153DC9F9FDBD47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabTab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F977B38B02A433C2FF17395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabTabTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE57B1FA2CF01CEAB11B8C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CabTab/Pods-CabTab-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CabTab/Pods-CabTab-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CabTab/Pods-CabTab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36DD8E2E9EACA48E7A4DF96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CabTab-CabTabUITests/Pods-CabTab-CabTabUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CabTab-CabTabUITests/Pods-CabTab-CabTabUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CabTab-CabTabUITests/Pods-CabTab-CabTabUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68640FB1905EBF91AC2BA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabTab-CabTabUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		223320CA2645283A003E983C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223320D12645283A003E983C /* CabTabSlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		228E8C0D2642CF3B0072CEE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E1506A2642E55200AA658D /* APIHelper.swift in Sources */,
+				223320BE264518F5003E983C /* LocationHelper.swift in Sources */,
 				228E8C192642CF3B0072CEE5 /* ViewController.swift in Sources */,
+				22E150612642E01500AA658D /* MapViewController.swift in Sources */,
 				228E8C152642CF3B0072CEE5 /* AppDelegate.swift in Sources */,
+				223320B926450FBC003E983C /* CabTableViewCell.swift in Sources */,
+				22E150772642E93D00AA658D /* CabDataViewModel.swift in Sources */,
+				228E8C522642D4A10072CEE5 /* CabData.swift in Sources */,
+				22E1506F2642E82500AA658D /* NetworkMonitor.swift in Sources */,
+				22E1505C2642DFED00AA658D /* ListViewController.swift in Sources */,
 				228E8C172642CF3B0072CEE5 /* SceneDelegate.swift in Sources */,
+				223320C62645270F003E983C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +610,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		223320D42645283A003E983C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 228E8C102642CF3B0072CEE5 /* CabTab */;
+			targetProxy = 223320D32645283A003E983C /* PBXContainerItemProxy */;
+		};
 		228E8C292642CF3F0072CEE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 228E8C102642CF3B0072CEE5 /* CabTab */;
@@ -351,6 +647,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		223320D62645283A003E983C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2ECF21A863F917A458029E5 /* Pods-CabTabSlowTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabTabSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTabSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabTab.app/CabTab";
+			};
+			name = Debug;
+		};
+		223320D72645283A003E983C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19694B072953D7A18A0F736 /* Pods-CabTabSlowTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabTabSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTabSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabTab.app/CabTab";
+			};
+			name = Release;
+		};
 		228E8C392642CF3F0072CEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,16 +805,19 @@
 		};
 		228E8C3C2642CF3F0072CEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03330292F099A89F3E6B9FF3 /* Pods-CabTab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6UB8W6ABG;
 				INFOPLIST_FILE = CabTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobitrail.debugApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,16 +826,19 @@
 		};
 		228E8C3D2642CF3F0072CEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CD6A96F33D4A12B96C1D3B /* Pods-CabTab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6UB8W6ABG;
 				INFOPLIST_FILE = CabTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.prasad.CabTab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobitrail.debugApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,6 +847,7 @@
 		};
 		228E8C3F2642CF3F0072CEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C345421E5472A8D7D6BDA0 /* Pods-CabTabTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +869,7 @@
 		};
 		228E8C402642CF3F0072CEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4DECC1091E454758100075 /* Pods-CabTabTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +891,7 @@
 		};
 		228E8C422642CF3F0072CEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079CEF22683CB6AE486317FA /* Pods-CabTab-CabTabUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +911,7 @@
 		};
 		228E8C432642CF3F0072CEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAAF7D9D914386C80A412B3B /* Pods-CabTab-CabTabUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +932,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		223320D52645283A003E983C /* Build configuration list for PBXNativeTarget "CabTabSlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223320D62645283A003E983C /* Debug */,
+				223320D72645283A003E983C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		228E8C0C2642CF3B0072CEE5 /* Build configuration list for PBXProject "CabTab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
